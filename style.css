@@ -1,0 +1,219 @@
+/*
+QUESTION
+1. foucs of searchbox
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.header {
+    margin: 20px 12px 0 0;
+}
+
+.navi {
+    float: right;
+    font-size: 13px;
+}
+
+.navi a {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.navi a:hover,
+.navi a:active {
+    color: blue;
+}
+
+.navi_red {
+    color: red;
+    font-weight: 700;
+}
+
+.navi_b {
+    color: black;
+    font-weight: 700;
+}
+
+.navi_bl {
+    color: black;
+    font-weight: 300;
+}
+
+.navi_more {
+    color: white;
+    background-color: #38f;
+    padding: 4px 4px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.search_form {
+    width: 640px;
+    margin: auto;
+    text-align: center;
+}
+
+.search_logo {
+    width: 270px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.search_box {
+    width: 640px;
+    height: 36px;
+    border: solid 1px lightgrey;
+    display: flex;
+}
+
+.search_box:hover,
+.search_box:active {
+    border: solid 1px #999;
+}
+
+.search_box:focus {
+    border: solid 1px #38f;
+}
+
+.search_text {
+    flex: 1;
+    border: none;
+}
+
+.search_text:focus {
+    outline-offset: 0px;
+    outline: 0px;
+}
+
+.icon {
+    height: 36px;
+    color: lightgrey;
+    flex: 0 0 36px;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon:hover,
+.icon:active {
+    color: #3388ff
+}
+
+.search_submit {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    background-color: #3385ff;
+    border: solid 0.8px #3388ff;
+}
+
+.search_submit:hover,
+.search_submit:active {
+    background-color: #0369f8;
+    border: solid 0.8px #0369f8;
+}
+
+.search_submit:focus {
+    outline-offset: 0px;
+    outline: 0px;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    display: block;
+    bottom: 40px;
+    text-align: center;
+}
+
+.footer_qcode {
+    border: solid 0.8px lightgrey;
+    margin-bottom: 5px;
+}
+
+.footer_p1 {
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer_p2 {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.footer_line1 {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.footer_line1 a {
+    margin-left: 20px;
+}
+
+.footer_line2 {
+    color: #999;
+    font-size: 12px;
+}
+
+.footer_link {
+    color: #999;
+    font-size: 12px;
+}
+
+.footer_links {
+    color: #999;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.iconf {
+    font-size: 16px;
+}
+
+.iconc {
+    color: red;
+    font-size: 16px;
+}
