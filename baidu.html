@@ -5,6 +5,7 @@
 
 <head>
 
+   
 
 </head>
 
@@ -27,8 +28,8 @@
     <div class="search">
         <div class="search_form">
             <img src="https://www.baidu.com/img/pc_1c6e30772d5e4103103bd460913332f9.png" alt="baidulogo" class="search_logo">
-            <div class="search_box" id="focus">
-                <input for="focus" type="text" class="search_text">
+            <div class="search_box js--focus" id="focus">
+                <input for="focus" type="text" class="search_text" onfocus="handleInputFocus()" onblur="handleInputBlur()">
                 <i class="icon ion-ios-mic"></i>
                 <i class="icon ion-ios-camera"></i>
                 <input type="submit" class="search_submit" value="百度一下">
@@ -55,8 +56,18 @@
             <a href="" class="footer_links">京公网安备11000002000001号<i class="iconc ion-ios-cash"></i></a>
         </div>
     </div>
+    
+     <script src="script.js"></script>
 </body>
 
-
+<!--
+<script>
+    function handleInputFocus(){
+document.getElementById("focus").style.border="solid 0.8px #3388ff"
+}
+    function handleInputBlur(){
+    document.getElementById("focus").style.border=""}
+</script>
+-->
 
 </html>

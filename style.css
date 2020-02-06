@@ -116,6 +116,16 @@ body {
     outline: 0px;
 }
 
+.focus {
+    border: 1px solid #FFB000;
+    outline: none;
+}
+
+.blur {
+    border: 1px solid #CCCCCC;
+    outline: none;
+}
+
 .icon {
     height: 36px;
     color: lightgrey;
